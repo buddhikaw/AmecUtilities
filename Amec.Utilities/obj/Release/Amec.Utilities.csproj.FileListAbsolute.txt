@@ -1,0 +1,14 @@
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll.config
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.pdb
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\System.Web.Optimization.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\WebGrease.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\System.Web.Optimization.xml
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json.xml
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.pdb
