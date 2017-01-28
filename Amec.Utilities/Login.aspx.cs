@@ -27,7 +27,7 @@ namespace Amec.Utilities
             user.Email = "testemail@buddhika.com";
             lvDb.UserInit(user);
             Session[Constants.UserSession] = user;
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Leave/LeaveSubmit.aspx");
         }
     }
 }

@@ -10,5 +10,5 @@ C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\System.Web.Opti
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json.xml
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb
-C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.pdb
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache

@@ -24,7 +24,7 @@
         <div class="container body-content">
             <div class="form-group row">
                 <div class="col-sm-12 alert alert-info">
-                Hi.. Untill we host in Corporate domain, Please provide your NT ID
+                Please provide any unique ID, This is Untill we host in Corporate domain. Then it will be SSO.
                 </div>
             </div>
             <div class="form-group row">
