@@ -60,7 +60,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - <a href="http://www.buddhika.info" target="_blank">www.buddhika.info</a></p>
+                <p>&copy; <%: DateTime.Now.Year %></p>
             </footer>
         </div>
 
