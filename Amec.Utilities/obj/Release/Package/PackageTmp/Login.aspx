@@ -12,12 +12,12 @@
         <%: Styles.Render("~/Content/css") %>        
     </asp:PlaceHolder>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
-    <link href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet"/>
 </head>
 <body>
     <form runat="server">
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="UserName" class="col-md-2 col-form-label">User Name</label>
+                <label for="UserName" class="col-sm-2 col-form-label">User Name</label>
                 <div class="col-sm-10">
                    <asp:TextBox ID="tbUserName" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
