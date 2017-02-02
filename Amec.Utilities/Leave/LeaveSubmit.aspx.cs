@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Amec.Utilities.Models;
-using static Amec.Utilities.Enums;
 using Amec.Utilities.DataAccess;
 using System.Data;
 using Amec.Utilities.Common;
@@ -20,9 +19,9 @@ namespace Amec.Utilities.Leave
         {
             if (!Page.IsPostBack)
             {
-                foreach (int i in Enum.GetValues(typeof(LeaveTypes)))
+                foreach (int i in Enum.GetValues(typeof(Enums.LeaveTypes)))
                 {
-                    ddlLeaveType.Items.Add(new ListItem(GetDescription((LeaveTypes)i), i.ToString()));
+                    ddlLeaveType.Items.Add(new ListItem(Enums.GetDescription((Enums.LeaveTypes)i), i.ToString()));
                 }
             }
         }
@@ -31,9 +30,9 @@ namespace Amec.Utilities.Leave
         {
             LeaveData leaveData = new LeaveData();
             leaveData.LeaveType = Convert.ToInt32(ddlLeaveType.SelectedValue.ToString());
-            leaveData.LeaveTypeDesc = GetDescription((LeaveTypes)leaveData.LeaveType);
-            LeaveDateTypes leaveDateTypes = (LeaveDateTypes)Enum.Parse(typeof(LeaveDateTypes),Request.Form["LeaveDateType"].ToString());
-            leaveData.LeaveDateType = GetDescription(leaveDateTypes);
+            leaveData.LeaveTypeDesc = Enums.GetDescription((Enums.LeaveTypes)leaveData.LeaveType);
+            Enums.LeaveDateTypes leaveDateTypes = (Enums.LeaveDateTypes)Enum.Parse(typeof(Enums.LeaveDateTypes), Request.Form["LeaveDateType"].ToString());
+            leaveData.LeaveDateType = Enums.GetDescription(leaveDateTypes);
             leaveData.LeaveDates = Request.Form["LeaveDates"].ToString().TrimEnd(',');
             leaveData.LeaveRemarks = Request.Form["leaveRemarks"].ToString();
             leaveData.LeaveUser = Session[Constants.UserSession] as AmecUser;

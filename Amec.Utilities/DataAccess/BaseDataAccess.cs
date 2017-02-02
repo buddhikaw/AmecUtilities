@@ -23,6 +23,7 @@ namespace Amec.Utilities.DataAccess
                 cmd.Parameters.AddWithValue("ntid", user.NtId);
                 cmd.Parameters.AddWithValue("name", user.Name);
                 cmd.Parameters.AddWithValue("email", user.Email);
+                cmd.Parameters.AddWithValue("givenName", user.GivenName);
                 try
                 {
                     conn.Open();

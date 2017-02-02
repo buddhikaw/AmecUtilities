@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Amec.Utilities
 {
-    public class Enums
+    public static class Enums
     {
         public enum LeaveTypes
         {
