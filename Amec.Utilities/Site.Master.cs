@@ -15,25 +15,17 @@ namespace Amec.Utilities
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
-            {
-                if (Session[Constants.UserSession] == null)
+            {              
+                try
                 {
-                    try
-                    {
-                        //Response.Redirect("~/Login.aspx");
-                        AmecUser user = UserInitiate.UserInit();
-                        Session[Constants.UserSession] = user;       
-                    }
-                    catch (Exception)
-                    {
-                       Response.Redirect(string.Format("~/LoginError.aspx?status={0}", "User Acces Error, Please contact Amec"));
-                    }                   
+                    //Response.Redirect("~/Login.aspx");
+                    AmecUser user = UserInitiate.LoggedUser;
+                    lblUserName.Text = user.GivenName;
                 }
-                else
+                catch (Exception)
                 {
-                    AmecUser user = Session[Constants.UserSession] as AmecUser;
-                    lblUserName.Text = user.NtId;
-                }
+                    Response.Redirect(string.Format("~/LoginError.aspx?status={0}", "User Acces Error, Please contact Amec"));
+                }                                                  
             }
         }
     }
