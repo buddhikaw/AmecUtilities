@@ -85,6 +85,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Leave\ExportAll.aspx" />
     <Content Include="LoginError.aspx" />
     <Content Include="AppStatus.aspx" />
     <Content Include="Content\Site.css" />
@@ -114,6 +115,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Leave\ExportAll.aspx.cs">
+      <DependentUpon>ExportAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leave\ExportAll.aspx.designer.cs">
+      <DependentUpon>ExportAll.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginError.aspx.cs">
       <DependentUpon>LoginError.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

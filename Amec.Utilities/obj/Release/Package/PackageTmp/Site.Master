@@ -43,6 +43,7 @@
                         <ul class="dropdown-menu">
                             <li><a runat="server" href="~/Leave/LeaveSubmit.aspx">Sumbit</a></li>
                             <li><a runat="server" href="~/Leave/ViewLeaves.aspx">View</a></li>
+							<li><a runat="server" href="~/Leave/ExportAll.aspx">Export Leaves</a></li>
                         </ul>
                     </li>
                     <li><a runat="server" href="~/">Time sheet</a></li>

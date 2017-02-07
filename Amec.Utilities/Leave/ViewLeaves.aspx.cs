@@ -18,10 +18,12 @@ namespace Amec.Utilities.Leave
         {
             if (!Page.IsPostBack)
             {
-                AmecUser LeaveUser = Session[Constants.UserSession] as AmecUser;
+                AmecUser LeaveUser = UserInitiate.LoggedUser;;
                 DataTable dt = lvDb.GetLeaves(LeaveUser);
+                if (dt != null && dt.Rows.Count > 0) { 
                 gdVwLeave.DataSource = dt;
                 gdVwLeave.DataBind();
+                }
             }
         }
 

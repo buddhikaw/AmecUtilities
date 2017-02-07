@@ -23,8 +23,32 @@ namespace Amec.Utilities.Leave
                 {
                     ddlLeaveType.Items.Add(new ListItem(Enums.GetDescription((Enums.LeaveTypes)i), i.ToString()));
                 }
+                              
+                AmecUser LeaveUser = UserInitiate.LoggedUser; ;
+                DataTable dt = lvDb.GetLeaves(LeaveUser);
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    gdVwLeave.DataSource = dt;
+                    gdVwLeave.DataBind();
+                }                
             }
         }
+
+        protected void gdVwLeave_PreRender(object sender, EventArgs e)
+        {
+            if (gdVwLeave.Rows.Count > 0)
+            {
+                //Replace the <td> with <th> and adds the scope attribute
+                gdVwLeave.UseAccessibleHeader = true;
+
+                //Adds the <thead> and <tbody> elements required for DataTables to work
+                gdVwLeave.HeaderRow.TableSection = TableRowSection.TableHeader;
+
+                //Adds the <tfoot> element required for DataTables to work
+                gdVwLeave.FooterRow.TableSection = TableRowSection.TableFooter;
+            }
+        }
+
 
         protected void btnLeaveSubmit_Click(object sender, EventArgs e)
         {
@@ -35,14 +59,36 @@ namespace Amec.Utilities.Leave
             leaveData.LeaveDateType = Enums.GetDescription(leaveDateTypes);
             leaveData.LeaveDates = Request.Form["LeaveDates"].ToString().TrimEnd(',');
             leaveData.LeaveRemarks = Request.Form["leaveRemarks"].ToString();
-            leaveData.LeaveUser = Session[Constants.UserSession] as AmecUser;
+            leaveData.LeaveUser = UserInitiate.LoggedUser;
             DataSet resultSet = lvDb.InsertLeave(leaveData);
             string status = resultSet.Tables[0].Rows[0][0].ToString();
             string statusMsg = resultSet.Tables[0].Rows[0][1].ToString();
             if (status == "0")
-                Response.Redirect("~/Leave/ViewLeaves.aspx");
+                Response.Redirect(Request.RawUrl);
             else
                 Response.Redirect(string.Format("~/AppStatus.aspx?status={0}", statusMsg));
+        }
+
+        protected void gdVwLeave_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                LinkButton l = (LinkButton)e.Row.FindControl("LinkButton1");
+                l.Attributes.Add("onclick", "javascript:return " +
+                "confirm('Are you sure you want to delete this leave " +
+                DataBinder.Eval(e.Row.DataItem, "Leave Id") + "')");
+            }
+        }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete")
+            {
+                // get the categoryID of the clicked row
+                int leaveID = Convert.ToInt32(e.CommandArgument);
+                lvDb.DeleteLeave(leaveID);
+                Response.Redirect(Request.RawUrl);
+            }
         }
     }
 }

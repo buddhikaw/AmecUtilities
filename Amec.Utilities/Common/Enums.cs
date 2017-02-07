@@ -10,8 +10,9 @@ namespace Amec.Utilities
     {
         public enum LeaveTypes
         {
-            MC = 1,
-            Annual = 2,
+            //Any new types please add below
+            Annual = 1,
+            MC = 2,
             [Description("Child Care")]
             ChildCare = 3
         }

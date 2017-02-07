@@ -26,3 +26,17 @@ C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\bin\System.Web.Optimization.xml
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll.config
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.pdb
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Microsoft.Web.Infrastructure.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\System.Web.Optimization.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\WebGrease.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.pdb
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json.xml
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\System.Web.Optimization.xml
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
+C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb

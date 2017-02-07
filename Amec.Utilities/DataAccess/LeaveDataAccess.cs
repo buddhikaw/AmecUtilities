@@ -42,12 +42,37 @@ namespace Amec.Utilities.DataAccess
             return ds;
         }
 
+        internal DataSet LeaveExportAll(int year, int month)
+        {
+            DataSet ds = new DataSet();
+            using (SqlConnection conn = new SqlConnection(AmecUtilDBConnection))
+            {
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "amec_leave_exportall";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("year", year);
+                cmd.Parameters.AddWithValue("month", month);
+                
+                try
+                {
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = cmd;
+                    da.Fill(ds);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return ds;
+        }
+
         internal DataTable GetLeaves(AmecUser leaveUser)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(AmecUtilDBConnection))
             {
-                string sql = "SELECT nt_id as [Leave User],leave_type_desc as [Leave Type],leave_date_type as [Leave Date type],(CONVERT(varchar, leave_date, 103)) as [Leave Date], leave_remarks as [Remarks] FROM amec_leaves where nt_id = @ntid";
+                string sql = "SELECT l.id as [Leave Id],l.leave_type_desc as [Leave Type],l.leave_date_type as [Leave Date type],(CONVERT(varchar, l.leave_date, 103)) as [Leave Date], (CONVERT(varchar, l.created_date, 103)) as [Created Date], l.leave_remarks as [Remarks] FROM amec_leaves l join amec_members m on l.nt_id =m.nt_id where l.nt_id = @ntid order by l.created_date desc";
                 SqlCommand cmd = new SqlCommand(sql,conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("ntid", leaveUser.NtId);
@@ -63,6 +88,26 @@ namespace Amec.Utilities.DataAccess
                 }
             }
             return dt;
+        }
+
+        internal void DeleteLeave(int leaveID)
+        {
+            using (SqlConnection conn = new SqlConnection(AmecUtilDBConnection))
+            {
+                string sql = "delete from amec_leaves where id = @leaveid";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("leaveid", leaveID);
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
         }
     }
 }

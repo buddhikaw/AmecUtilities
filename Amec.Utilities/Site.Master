@@ -9,49 +9,34 @@
     <title><%: Page.Title %> AMEC Utilities</title>
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-       
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
-    <link href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet"/>
+    <link href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet" />
 
-    
-    <asp:placeholder runat="server">
-        <%: Scripts.Render("~/bundles/jquery-dateFormat") %>   
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/jquery-dateFormat") %>
         <%: Styles.Render("~/Content/css") %>        
-    </asp:placeholder>
-    
+    </asp:PlaceHolder>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="navbar-header">               
                 <a class="navbar-brand" runat="server" href="~/">AMEC Utilities</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a runat="server" href="~/Leave/LeaveSubmit.aspx">Sumbit</a></li>
-                            <li><a runat="server" href="~/Leave/ViewLeaves.aspx">View</a></li>
-                        </ul>
-                    </li>
-                    <li><a runat="server" href="~/">Time sheet</a></li>
-                    <li><a runat="server" href="~/">Throughput</a></li>
-                </ul>
-                <ul class="nav navbar-nav  navbar-right">
-                    <li class="navbar-text">Hello, &nbsp;<asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label>
-                </ul>
-            </div>
+            <a runat="server" class="btn btn-primary navbar-btn" href="~/Leave/LeaveSubmit.aspx">Leave Submit</a>
+            <a runat="server" class="btn btn-primary navbar-btn" href="~/Leave/ExportAll.aspx">Leave Export</a>
+            <ul class="nav navbar-right">
+                <li class="navbar-text">Hello, &nbsp;<asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label>
+            </ul>
         </div>
     </div>
     <form runat="server">
@@ -59,9 +44,9 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
+            <%--<footer>
                 <p>&copy; <%: DateTime.Now.Year %></p>
-            </footer>
+            </footer>--%>
         </div>
 
     </form>

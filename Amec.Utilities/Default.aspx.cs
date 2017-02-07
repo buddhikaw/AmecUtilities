@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Amec.Utilities.Common;
+using Amec.Utilities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,8 @@ namespace Amec.Utilities
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            AmecUser user = UserInitiate.LoggedUser;
+            ltName.Text = user.GivenName;
         }
     }
 }
