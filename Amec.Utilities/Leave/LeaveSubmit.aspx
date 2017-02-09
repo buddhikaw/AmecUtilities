@@ -2,12 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
- <%--   <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>--%>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
-<%--    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">--%>
+     <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/datetime-moment") %> 
+    </asp:PlaceHolder>
 
     <script type="text/javascript">
         $(function () {
+            $.fn.dataTable.moment('DD MMM YYYY');
             $('#gdVwLeave').DataTable();
             $('[data-toggle="tooltip"]').tooltip();
             $('#dvFullDay').multiDatesPicker();

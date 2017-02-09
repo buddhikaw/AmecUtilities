@@ -72,7 +72,7 @@ namespace Amec.Utilities.DataAccess
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(AmecUtilDBConnection))
             {
-                string sql = "SELECT l.id as [Leave Id],l.leave_type_desc as [Leave Type],l.leave_date_type as [Leave Date type],(CONVERT(varchar, l.leave_date, 103)) as [Leave Date], (CONVERT(varchar, l.created_date, 103)) as [Created Date], l.leave_remarks as [Remarks] FROM amec_leaves l join amec_members m on l.nt_id =m.nt_id where l.nt_id = @ntid order by l.created_date desc";
+                string sql = "SELECT l.id as [Leave Id],l.leave_type_desc as [Leave Type],l.leave_date_type as [Leave Date type],(CONVERT(varchar, l.leave_date, 106)) as [Leave Date], (CONVERT(varchar, l.created_date, 106)) as [Created Date], l.leave_remarks as [Remarks] FROM amec_leaves l join amec_members m on l.nt_id =m.nt_id where l.nt_id = @ntid order by l.created_date desc";
                 SqlCommand cmd = new SqlCommand(sql,conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("ntid", leaveUser.NtId);

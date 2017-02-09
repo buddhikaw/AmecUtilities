@@ -24,6 +24,7 @@ namespace Amec.Utilities
             AmecUser user = new AmecUser();
             user.NtId = tbUserName.Text.Trim();
             user.Name = user.NtId;
+            user.GivenName = user.NtId;
             user.Email = "testemail@buddhika.com";
             lvDb.UserInit(user);
             Session[Constants.UserSession] = user;

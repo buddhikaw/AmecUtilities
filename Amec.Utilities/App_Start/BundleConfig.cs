@@ -23,6 +23,10 @@ namespace Amec.Utilities
             bundles.Add(new ScriptBundle("~/bundles/jquery-dateFormat").Include(
                         "~/Scripts/jquery-dateFormat.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/datetime-moment").Include(
+                        "~/Scripts/moment.js",
+                        "~/Scripts/datetime-moment.js"));
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
