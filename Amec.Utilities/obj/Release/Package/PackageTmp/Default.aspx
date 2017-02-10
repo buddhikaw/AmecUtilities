@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <h1>Welcome AMEC Member !!!</h1>
+        <h2>Welcome &nbsp;<asp:Literal ID="ltName" runat="server"></asp:Literal>  !!!</h2> 
         <p class="lead">AMEC Utilities to make your life a little bit easier .</p>        
     </div>
 

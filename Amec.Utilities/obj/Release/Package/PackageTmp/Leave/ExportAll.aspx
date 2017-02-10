@@ -34,7 +34,7 @@
     </div>
     <div class="form-group row">
       <div class="col-sm-offset-1 col-sm-11">
-           <asp:Button ID="btnExport" runat="server" Text="Export" CssClass="btn btn-default" OnClick="btnExport_Click" />
+           <asp:Button ID="btnExport" runat="server" Text="Export" CssClass="btn btn-primary" OnClick="btnExport_Click" />
       </div>
     </div>    
 </asp:Content>

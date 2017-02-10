@@ -37,9 +37,9 @@
                 <div class="col-sm-2">
                     &nbsp;
                 </div>
-               <%-- <div class="col-sm-10">
+                <div class="col-sm-10">
                     <asp:Button ID="btnSubmit" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnSubmit_Click" />
-                </div>--%>
+                </div>
             </div>
         </div>
     </form>
