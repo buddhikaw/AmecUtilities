@@ -1,4 +1,3 @@
-C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Debug\Amec.Utilities.csprojResolveAssemblyReference.cache
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll.config
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.pdb

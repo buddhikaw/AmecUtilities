@@ -7,21 +7,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> AMEC Utilities</title>
-
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
-    <link href="http://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet" />
-
-
     <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/jquery-dateFormat") %>
         <%: Styles.Render("~/Content/css") %>        
     </asp:PlaceHolder>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />    
+    <link href="/jqueryui/jquery-ui.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/jqueryui/jquery-ui.min.js"></script>   
+    <script src="/Scripts/jquery-dateFormat.min.js"></script>   
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

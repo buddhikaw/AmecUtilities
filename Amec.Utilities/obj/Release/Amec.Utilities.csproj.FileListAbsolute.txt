@@ -11,7 +11,6 @@ C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Newtonsoft.Json
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb
 C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\bin\Antlr3.Runtime.pdb
-C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll.config
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.dll
 C:\SVN-CE\DEV\AmecUtilities\Amec.Utilities\bin\Amec.Utilities.pdb
@@ -40,3 +39,4 @@ C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\bin\System.Web.Optimizati
 C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache
 C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.dll
 C:\SVN\CE-WF\Others\trunk\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.pdb
+C:\Users\bnwim\Documents\GitHub\AmecUtilities\Amec.Utilities\obj\Release\Amec.Utilities.csprojResolveAssemblyReference.cache

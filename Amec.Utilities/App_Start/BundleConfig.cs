@@ -20,8 +20,8 @@ namespace Amec.Utilities
             //            "~/Scripts/jquery.unobtrusive*",
             //            "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery-dateFormat").Include(
-                        "~/Scripts/jquery-dateFormat.min.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/jquery-dateFormat").Include(
+            //            "~/Scripts/jquery-dateFormat.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/datetime-moment").Include(
                         "~/Scripts/moment.js",

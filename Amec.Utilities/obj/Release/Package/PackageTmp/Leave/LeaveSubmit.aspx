@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeaveSubmit.aspx.cs" Inherits="Amec.Utilities.Leave.LeaveSubmit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    
+    <link rel="stylesheet" href="/DataTables/datatables.min.css">
+    <script src="/MultiDatesPicker/jquery-ui.multidatespicker.js"></script>
+    <script src="/DataTables/datatables.min.js"></script>
+
      <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/datetime-moment") %> 
     </asp:PlaceHolder>
