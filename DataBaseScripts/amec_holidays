@@ -1,0 +1,65 @@
+USE [GIC.Workflow.LogNotification]
+GO
+
+/****** Object:  Table [dbo].[amec_holidays]    Script Date: 13/03/2017 13:05:33 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[amec_holidays](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[holiday] [date] NOT NULL,
+	[remarks] [nvarchar](1000) NULL,
+	[created_date] [datetime] NULL,
+ CONSTRAINT [PK_amec_holidays] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20171225' ,'Christmas Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20171018' ,'Deepavali' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170901' ,'Hari Raya Haji' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170809' ,'National Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170626' ,'Public holiday in lieu of Hari Raya Puasa falling on Sunday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170625' ,'Hari Raya Puasa' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170510' ,'Vesak Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170501' ,'Labour Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170414' ,'Good Friday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170130' ,'Public Holiday in lieu of Chinese New Year falling on Sunday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170129' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170128' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170102' ,'Public Holiday in lieu of New Year''s Day falling on Sunday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20170101' ,'New Year''s Day' ,getdate());
+
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20181225' ,'Christmas Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20181107' ,'Deepavali' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180822' ,'Hari Raya Haji' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180809' ,'National Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180615' ,'Hari Raya Puasa' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180529' ,'Vesak Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180501' ,'Labour Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180330' ,'Good Friday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180217' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180216' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20180101' ,'New Year''s Day' ,getdate());
+
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20191225' ,'Christmas Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20191028' ,'Public Holiday in lieu of Deepavali Day falling on Sunday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20191027' ,'Deepavali' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190812' ,'Hari Raya Haji' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190809' ,'National Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190605' ,'Hari Raya Puasa' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190513' ,'Public Holiday in lieu of Vesak Day falling on Sunday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190512' ,'Vesak Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190501' ,'Labour Day' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190419' ,'Good Friday' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190206' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190205' ,'Chinese New Year' ,getdate());
+INSERT INTO [dbo].[amec_holidays] ([holiday] ,[remarks] ,[created_date]) VALUES ('20190101' ,'New Year''s Day' ,getdate());
+
